@@ -29,5 +29,5 @@ header nav ul li a {
 }
 /* 모바일 메뉴 - 데스크탑에서 숨기기 */
 header nav .m_nav {
-    /* display: none; */
+    display: none;
 }
