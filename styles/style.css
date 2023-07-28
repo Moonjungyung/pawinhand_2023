@@ -56,3 +56,78 @@ header .m_nav_open ul li a {
     letter-spacing: -0.02em;
     font-size: 1.33rem;
 }
+/* main */
+main {}
+/* main-1. swiper-slide */
+/* .swiper 플러그인의 정식명칭 클래스는 웹 페이지 1장에서 swiper가 2개 이상 들어올 경우 디자인이 강제로 중복될 수 있으므르 개별 아이디 및 클래스 사용해서 선택자를 만들고 디자인한다. */
+main #pawin_slide {
+    width: 1160px; height: 650px;
+    background: yellowgreen;
+}
+main #pawin_slide .swiper-wrapper {}
+main #pawin_slide .swiper-wrapper .swiper-slide {}
+main #pawin_slide .swiper-wrapper .slide1 {
+    background:url(https://picsum.photos/id/10/1160) center fixed;
+    background-size: cover;
+}
+main #pawin_slide .swiper-wrapper .slide2 {
+    background:url(https://picsum.photos/id/20/1160) center fixed;
+    background-size: cover;
+}
+main #pawin_slide .swiper-wrapper .slide3 {
+    background:url(https://picsum.photos/id/30/1160) center fixed;
+    background-size: cover;
+}
+main #pawin_slide .swiper-wrapper .slide4 {
+    background:url(https://picsum.photos/id/40/1160) center fixed;
+    background-size: cover;
+}
+main #pawin_slide .swiper-button-prev,
+main #pawin_slide .swiper-button-next {
+    width: 40px; height: 40px;
+}
+main #pawin_slide .swiper-button-prev {
+    background: url(../img/prev.png);
+    background-repeat: no-repeat;
+}
+main #pawin_slide .swiper-button-next {
+    background: url(../img/next.png);
+    background-repeat: no-repeat;
+}
+/* swiper-slide 라이브러리에서 기본제공하는 이전,다음 숨기기 */
+main #pawin_slide .swiper-button-prev::after,
+main #pawin_slide .swiper-button-next::after {
+    display: none;
+}
+main #size {
+    width: 1160px; height: 300px;
+    background-color: lightcoral;
+}
+main #size .swiper-wrapper .swiper-slide {}
+main #size .swiper-wrapper .slide5 {
+    background: url(https://picsum.photos/1160/300);
+}
+main #size .swiper-wrapper .slide5 {
+    background: url(https://picsum.photos/1160/300);
+}
+main #size .swiper-wrapper .slide6 {
+    background: url(https://picsum.photos/1160/300);
+}
+main #size .swiper-wrapper .slide7 {
+    background: url(https://picsum.photos/1160/300);
+}
+main #size .swiper-button-prev,
+main #size .swiper-button-next {
+    width: 40px; height: 40px;
+    background-repeat: no-repeat;
+}
+main #size .swiper-button-prev {
+    background: url(../img/prev.png);
+}
+main #size .swiper-button-next {
+    background: url(../img/next.png);
+}
+main #size .swiper-button-prev::after,
+main #size .swiper-button-next::after {
+    display: none;
+}
