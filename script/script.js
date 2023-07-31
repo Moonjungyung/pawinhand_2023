@@ -30,11 +30,11 @@ close.addEventListener('click',function(){
 const pawin_slide = new Swiper('#pawin_slide', {
     //자동재생
     autoplay:
-    {delay:3000, //슬라이드 간격(밀리초) 기본 3초
+    {delay:4000, //슬라이드 간격(밀리초) 기본 3초
     disableOnInteraction:false, //버튼 클릭 후 자동재생유지
     },
     loop:true,
-    effect:'fade', //제자리 자연스러운 변경 슬라이드
+    // effect:'fade', //제자리 자연스러운 변경 슬라이드
     navigation: { //이전, 다음 네비게이션 연결
         //next, prev 객체 연결 시 부모를 안 적으면 
         //body 안에 있는 모든 swiper-next, prev를 인식하기 때문에
@@ -42,6 +42,7 @@ const pawin_slide = new Swiper('#pawin_slide', {
         nextEl: '#pawin_slide .swiper-button-next',
         prevEl: '#pawin_slide .swiper-button-prev',
     },
+    direction:'horizontal'
 });
 const size = new Swiper('#size', {
     effect:'cards',
