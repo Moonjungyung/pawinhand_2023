@@ -34,4 +34,13 @@
     main #pawin_slide .swiper-wrapper .slide1 {
         background:url(../img/pawin_slide_m.jpg) center;
     }
+    main #dog_info_slide .swiper-wrapper .swiper-slide h2 {
+        font-size: 1rem;
+        letter-spacing: -0.02em;
+        font-weight: 700;
+    }
+    main #dog_info_slide .swiper-wrapper .swiper-slide p {
+        letter-spacing: -0.02em;
+        font-size: 0.8rem;
+    }
 }/* 900 end */

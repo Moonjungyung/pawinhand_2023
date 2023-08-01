@@ -44,6 +44,13 @@ const pawin_slide = new Swiper('#pawin_slide', {
     },
     direction:'horizontal'
 });
+//pawin-slide2
+const pawin_slide2 = new Swiper('#pawin-slide2', {
+    autoplay:{delay:3000},
+    loop:true,
+    effect:'fade',
+})
+//연습
 const size = new Swiper('#size', {
     effect:'cards',
     loop:true,
@@ -52,3 +59,17 @@ const size = new Swiper('#size', {
         prevEl: '#size .swiper-button-prev',
     },
 })
+// 입양정보 slide
+const dog_info_slide = new Swiper('#dog_info_slide',{
+    slidesPerView:'auto', //breakpoints옵션추가시 'auto', 한번에 보이는 슬라이드 갯수
+    spaceBetween:20,//여백
+    //swiper-slide 반응형웹 옵션
+    autoplay:{delay:1000},
+    loop:true,
+    breakpoints:{
+        //해상도:{옵션:값} 순서 - 작은 해상도 -> 큰 해상도 순
+        400:{slidesPerView:2},
+        900:{slidesPerView:3},
+        1160:{slidesPerView:4} //1160이상일 경우 슬라이드 4개 표시
+    }
+});
